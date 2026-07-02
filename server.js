@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Security Middleware to prevent scraping
-const ALLOWED_ORIGINS = ['http://localhost:3000', 'https://test-download2-vidvault.vercel.app'];
+const ALLOWED_ORIGINS = ['http://localhost:3000', 'https://test-download2-vidvault.vercel.app', 'https://download2.fluxplays.live'];
 const API_KEY = 'StreamSearch-V1-Secret-Key-8392';
 
 app.use((req, res, next) => {
