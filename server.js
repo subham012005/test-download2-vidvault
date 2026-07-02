@@ -254,6 +254,7 @@ app.get("/gdirect", async (req, res) => {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Download Link Ready - StreamSearch</title>
                     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+                    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
                     <style>
                         body {
                             font-family: 'Outfit', sans-serif;
