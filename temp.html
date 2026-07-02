@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gullak Season 5 (1080p) Single Episodes Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://nexdrive.vip/img/0a4c642-80x80.png" sizes="32x32" />
+    <link rel="icon" href="https://nexdrive.vip/img/0a4c642-80x80.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://nexdrive.vip/img/0a4c642-80x80.png" />
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            background:#141414;
+            font-family:Arial,Helvetica,sans-serif;
+            color:#111;
+        }
+        .page-wrap{
+            max-width:900px;
+            margin:0 auto;
+            padding:20px 12px 50px;
+        }
+        .card{
+            background:#ffffff;
+            border-radius:10px;
+            padding:22px 18px 28px;
+            box-shadow:0 6px 18px rgba(0,0,0,0.35);
+        }
+        .top-center{
+            text-align:center;
+        }
+        .title-main{
+            font-size:26px;
+            font-weight:bold;
+            margin-bottom:6px;
+            line-height:1.2;
+        }
+        .subtitle{
+            font-size:14px;
+            color:#666;
+            line-height:1.4;
+        }
+        .divider{
+            margin:18px auto;
+            height:1px;
+            background:#e0e0e0;
+            max-width:95%;
+        }
+        .note-small{
+            text-align:center;
+            margin:10px 0 15px;
+            font-size:14px;
+            color:#333;
+        }
+
+        .ep-title-h4{
+            text-align:center;
+            font-size:17px;
+            margin:18px 0 8px;
+            padding:8px 10px;
+            background:#f5f5f5;
+            border-radius:6px;
+            border-left:4px solid #ff6600;
+        }
+        .ep-title-h4 span{
+            color:#333;
+        }
+
+        .ep-buttons-wrap{
+            text-align:center;
+            margin-bottom:18px;
+        }
+        .btn-ep{
+            display:inline-block;
+            padding:10px 20px;
+            border-radius:999px;
+            border:none;
+            margin:5px 4px;
+            font-size:14px;
+            font-weight:bold;
+            color:#fff;
+            cursor:pointer;
+            text-decoration:none;
+            box-shadow:0 3px 6px rgba(0,0,0,0.25);
+            white-space:nowrap;
+        }
+        .btn-gdirect{
+            background:linear-gradient(90deg,#00c6ff,#00d36b);
+        }
+        .btn-vcloud{
+            background:linear-gradient(90deg,#ff512f,#f09819);
+        }
+        .btn-gdtot{
+            background:linear-gradient(90deg,#2e8bff,#ff19d0);
+        }
+        .btn-ep i{
+            margin:0 4px;
+        }
+
+        .alert{
+            padding:12px 15px;
+            border-radius:6px;
+            margin:10px 0;
+            font-size:13px;
+            line-height:1.5;
+            text-align:left;
+            border-left:4px solid transparent;
+        }
+        .alert-success{
+            background:#d1e7dd;
+            color:#0f5132;
+            border-left-color:#0f5132;
+        }
+        .alert-info{
+            background:#cff4fc;
+            color:#055160;
+            border-left-color:#055160;
+        }
+        .bottom-note{
+            font-size:13px;
+            line-height:1.6;
+            margin-top:18px;
+            text-align:left;
+            color:#333;
+        }
+        .bottom-note b{
+            font-weight:bold;
+        }
+        .share-txt{
+            margin-top:18px;
+            font-weight:bold;
+            text-align:center;
+            font-size:16px;
+        }
+
+        /* Quality buttons */
+        .quality-wrap{
+            margin:5px 0 10px;
+            text-align:left;
+        }
+        .quality-label{
+            font-size:14px;
+            margin-right:6px;
+            display:inline-block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+        .quality-scroller{
+            display:flex;
+            gap:6px;
+            overflow-x:auto;
+            padding:4px 0 2px;
+        }
+        .quality-scroller::-webkit-scrollbar{
+            height:4px;
+        }
+        .quality-scroller::-webkit-scrollbar-thumb{
+            background:#ccc;
+            border-radius:3px;
+        }
+        .quality-btn{
+            flex:0 0 auto;
+            padding:7px 14px;
+            border-radius:16px;
+            border:1px solid #999;
+            font-size:13px;
+            text-decoration:none;
+            color:#333;
+            background:#f4f4f4;
+        }
+        .quality-btn.active{
+            background:#333;
+            color:#fff;
+            border-color:#333;
+        }
+
+        @media(max-width:768px){
+            .page-wrap{
+                padding:15px 10px 35px;
+            }
+            .card{
+                padding:18px 12px 24px;
+                border-radius:10px;
+            }
+            .title-main{
+                font-size:21px;
+            }
+            .subtitle{
+                font-size:13px;
+            }
+            .ep-title-h4{
+                font-size:15px;
+                margin-top:15px;
+            }
+            .btn-ep{
+                display:block;
+                width:100%;
+                max-width:100%;
+                margin:6px auto;
+                white-space:normal;
+                line-height:1.3;
+            }
+            .ep-buttons-wrap{
+                text-align:center;
+            }
+            .alert{
+                font-size:12px;
+            }
+            .bottom-note{
+                font-size:12px;
+            }
+        }
+
+        @media(max-width:480px){
+            .title-main{
+                font-size:19px;
+            }
+            .subtitle{
+                font-size:12px;
+            }
+            .note-small{
+                font-size:12px;
+            }
+        }
+    </style>
+<script data-cfasync="false" async type="text/javascript" src="//kl.deputesastay.com/rbZhgBbdwEtVOZR/133176"></script></head>
+<body>
+<div class="page-wrap">
+    <div class="card">
+
+        <!-- Header / Title -->
+        <div class="top-center">
+            <div class="title-main">
+                Gullak – Season 5 (1080p)            </div>
+            <div class="subtitle">
+                Single Episodes Download – Use a download manager like IDM or ADM for ⚡ instant download!
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="note-small">
+            <b>Note :</b> Use Download Manager Like IDM Or ADM For ⚡ Instant download!
+        </div>
+
+        <div class="divider"></div>
+<div id="banner-ad" style="text-align:center;"></div>
+        <!-- QUALITY BUTTONS -->
+        
+        <!-- Episodes -->
+                                    <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 1 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/44b82b"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (914MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/c587642240e5"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (914MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 2 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/fb80f1"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (790MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/a02767009331"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (790MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 3 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/f0212d"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (1GB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/cc832620f26c"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (1GB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 4 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/ce8c19"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (710MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/a54cf4bf473b"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (710MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 5 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/f032b3"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (479MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/314b42879c57"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (479MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 6 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/a9548c"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (587MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/3eb69b7363a2"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (587MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                            <h4 class="ep-title-h4">
+<strong><span>-: Episodes: 7 :-</span></strong>                </h4>
+
+                <div class="ep-buttons-wrap">
+                                                                                        <a class="btn-ep btn-gdirect"
+                           href="https://fast-dl.one/dl/96b940"
+                           target="_blank" rel="nofollow noopener">
+                      ⬇️ ⚡ G-Direct  [Instant] (698MB) ⬇️
+                        </a>
+                    
+                                                                    <a class="btn-ep btn-vcloud"
+                           href="https://vgmlinks.live/b2205ee958fe"
+                           target="_blank" rel="nofollow noopener">
+                          ⬇️ ⚡ V-Gmlinks [Resumable] (698MB) ⬇️
+                        </a>
+                    
+                                    </div>
+
+                <div class="divider"></div>
+                    
+        <!-- Info alerts -->
+        <div class="alert alert-success">
+            Use ✅ <b>Fast Server {V-Cloud}</b> to download without G-Drive login. (V-Cloud Server Support Resume) 🙂
+        </div>
+        <div class="alert alert-info">
+            Use ⚡ <b>G-Direct</b> Link For fast downloading. (But Not Resume Supported So Download When Your Internet is Stable)
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Bottom note -->
+        <div class="bottom-note">
+            <b>Note:</b> Due to Copyright Policy files may be
+            <span style="color:#ff0000;"><b>deleted</b></span> by Administrator.
+            Please check all the <span style="color:#ff0000;"><b>Download Links</b></span> until you get your Movie or Season with All Episodes.
+            If none of the download links is working then kindly report
+            <span style="color:#0000ff;"><b>Broken Links</b></span>.
+            We will update the download link as soon as possible. Check back after 24 hours of
+            <b>Reporting</b>. Thank you 🙂
+        </div>
+
+        <div class="share-txt">
+            Keep Sharing Our Site with Your Friends 🙂
+        </div>
+
+    </div>
+</div>
+</body>
+
+<ins class="604c7625" data-key="e3530db9-e3a5-4ec7-a94d-a79145d42422" data-cp-host="3fc7c961f01b4db7a80760d6dfb0572d|vegamovies.channel" data-cp-domain="vegamovies.channel"></ins>
+<ins class="604c7625" data-key="ef118a45-35b5-449a-9f6c-a7bb2247085c" data-cp-host="3fc7c961f01b4db7a80760d6dfb0572d|vegamovies.channel" data-cp-domain="vegamovies.channel"></ins>
+<script async src="https://cvt-s2.agl002.online/o/s/a941312e99999aac85c8d55346033a2f.js"></script>
+</html>
