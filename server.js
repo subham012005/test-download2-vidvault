@@ -308,6 +308,10 @@ app.get("/gdirect", async (req, res) => {
     }
 });
 
-app.listen(3000, () =>
-    console.log("http://localhost:3000")
-);
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+    app.listen(3000, () =>
+        console.log("http://localhost:3000")
+    );
+}
+
+export default app;
