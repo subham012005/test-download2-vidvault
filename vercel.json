@@ -2,8 +2,16 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/server.js"
+      "source": "/search",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/download-links",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/gdirect(.*)",
+      "destination": "/api/index"
     }
   ]
 }
