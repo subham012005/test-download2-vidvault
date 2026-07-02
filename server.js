@@ -5,6 +5,42 @@ import * as cheerio from "cheerio";
 const app = express();
 
 app.use(express.json());
+
+// Security Middleware to prevent scraping
+const ALLOWED_ORIGINS = ['http://localhost:3000', 'https://test-download2-vidvault.vercel.app'];
+const API_KEY = 'StreamSearch-V1-Secret-Key-8392';
+
+app.use((req, res, next) => {
+    // Only protect the API routes, not static files or the /gdirect page
+    if (req.path === '/search' || req.path === '/download-links') {
+        const origin = req.headers.origin || req.headers.referer;
+        
+        // Simple Origin check (if origin is present)
+        if (origin && !ALLOWED_ORIGINS.some(allowed => origin.startsWith(allowed))) {
+            return res.status(403).json({ error: 'Access denied: Invalid Origin' });
+        }
+
+        // Custom API Key check
+        const clientApiKey = req.headers['x-api-key'];
+        if (clientApiKey !== API_KEY) {
+            return res.status(403).json({ error: 'Access denied: Invalid or missing API Key' });
+        }
+    }
+    
+    // Add basic CORS headers for our frontend
+    const reqOrigin = req.headers.origin;
+    if (ALLOWED_ORIGINS.includes(reqOrigin)) {
+        res.setHeader('Access-Control-Allow-Origin', reqOrigin);
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-api-key');
+    }
+
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+    }
+    
+    next();
+});
 app.use(express.static("public"));
 
 async function getDownloadLinks(pageUrl) {

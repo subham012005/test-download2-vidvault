@@ -516,7 +516,8 @@
                 const res = await fetch("/search", {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        "x-api-key": "StreamSearch-V1-Secret-Key-8392"
                     },
                     body: JSON.stringify({ query })
                 });
@@ -591,7 +592,10 @@
 
                 const res = await fetch("/download-links", {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
+                    headers: {
+                        "Content-Type": "application/json",
+                        "x-api-key": "StreamSearch-V1-Secret-Key-8392"
+                    },
                     body: JSON.stringify({ url })
                 });
 
